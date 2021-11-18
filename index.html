@@ -8,54 +8,57 @@
     <title>Dc Quiz</title>
   </head>
   <body>
+      <div id="parent">
+      <div id="content">
     <h1>
       DC Quiz - Inlämning 3
+      <button id="changeback">Change Mode</button>
     </h1>
-    <button id="changeback">Change Mode</button>
-    <div id="content">
-      <h3>Batman är starkast i DC-Universe!</h3>
-      <input type="radio" value="true" name="choice1" />
-      <label id="label" for="sant">Sant</label>
-      <input type="radio" value="false" name="chioce1" />
-      <label id="label" for="falskt">Falskt</label>
+    
+      
+      <h2>Batman är starkast i DC-Universe!</h2>
+      <input type="radio" value="false" name="choice1" id="choice" />
+      <label id="label" for="choice1">Sant</label>
+      <input type="radio" value="true" name="choice1" id="choice" />
+      <label id="label" for="choice1">Falskt</label>
 
-      <h3>Robin är Batmans pappa!</h3>
-      <input type="radio" value="true" name="choice2" />
-      <label id="label" for="sant">Sant</label>
-      <input type="radio" value="false" name="choice2" />
-      <label id="label" for="falskt">Falskt</label>
+      <h2>Robin är Batmans pappa!</h2>
+      <input type="radio" value="false" name="choice2" id="choice" />
+      <label id="label" for="choice2">Sant</label>
+      <input type="radio" value="true" name="choice2" id="choice" />
+      <label id="label" for="choice2">Falskt</label>
 
-      <h3>Batman heter egentligen Alfred!</h3>
-      <input type="radio" value="true" name="choice3" />
-      <label id="label" for="sant">Sant</label>
-      <input type="radio" value="false" name="choice3" />
-      <label id="label" for="falskt">Falskt</label>
+      <h2>Batman heter egentligen Alfred!</h2>
+      <input type="radio" value="false" name="choice3" id="choice" />
+      <label id="label" for="choice3">Sant</label>
+      <input type="radio" value="true" name="choice3" id="choice" />
+      <label id="label" for="choice3">Falskt</label>
 
-      <h3>Lever Batmans föräldrar?</h3>
-      <input type="radio" value="false" name="choice4" />
-      <label id="label" for="sant">Ja, båda föräldrar lever</label>
-      <input type="radio" value="true" name="choice4" />
-      <label id="label" for="falskt">Nej, de är tyvärr döda</label>
-      <input type="radio" value="false" name="choice4" />
-      <label id="label" for="falskt">Farsan lever loppan</label>
+      <h2>Lever Batmans föräldrar?</h2>
+      <input type="radio" value="false" name="choice4" id="choice" />
+      <label id="label" for="choice4">Ja, båda föräldrar lever</label>
+      <input type="radio" value="true" name="choice4" id="choice" />
+      <label id="label" for="choice4">Nej, de är tyvärr döda</label>
+      <input type="radio" value="false" name="choice4" id="choice"/>
+      <label id="label" for="choice4">Farsan lever loppan</label>
 
-      <h3>Vad heter Batmans fru?</h3>
-      <input type="radio" value="false" name="choice5" />
-      <label id="label" for="sant">Gertrud</label>
-      <input type="radio" value="false" name="choice5" />
-      <label id="label" for="falskt">Lisa</label>
-      <input type="radio" value="true" name="choice5" />
-      <label id="label" for="falskt">Batman har ingen fru</label>
+      <h2>Vad heter Batmans fru?</h2>
+      <input type="radio" value="false" name="choice5" id="choice"/>
+      <label id="label" for="choice5">Gertrud</label>
+      <input type="radio" value="false" name="choice5" id="choice"/>
+      <label id="label" for="choice5">Lisa</label>
+      <input type="radio" value="true" name="choice5" id="choice"/>
+      <label id="label" for="choice5">Batman har ingen fru</label>
 
-      <h3>Har Batman råd att betala hyran?</h3>
-      <input type="radio" value="true" name="choice6" />
-      <label id="label" for="sant">Ja, Batman är rik som ett troll</label>
-      <input type="radio" value="false" name="choice6" />
-      <label id="label" for="falskt">Batmans pappa betalar</label>
-      <input type="radio" value="false" name="choice6" />
-      <label id="label" for="falskt">Nej, Batman är fattig</label>
+      <h2>Har Batman råd att betala hyran?</h2>
+      <input type="radio" value="true" name="choice6" id="choice"/>
+      <label id="label" for="choice6">Ja, Batman är rik som ett troll</label>
+      <input type="radio" value="false" name="choice6" id="choice"/>
+      <label id="label" for="choice6">Batmans pappa betalar</label>
+      <input type="radio" value="false" name="choice6" id="choice"/>
+      <label id="label" for="choice6">Nej, Batman är fattig</label>
 
-      <h3>Vilka personer brukar hjälpa Batman?</h3>
+      <h2>Vilka personer brukar hjälpa Batman?</h2>
       <input type="checkbox" id="input" name="name1" />
       <label id="label" for="name1">Brandon</label>
       <input type="checkbox" id="input" name="name2" />
@@ -64,8 +67,17 @@
       <label id="label" for="name3">Oscar</label>
       <input type="checkbox" id="input" name="name4" />
       <label id="label" for="name4">Alfred</label>
-    </div>
-    <button id="result">Get result</button>
+      <input type="checkbox" id="input" name="name5" />
+      <label id="label" for="name5">Kommissarie Gordon</label>
+
+      <div>
+        <button id="result">Get result</button>
+      </div>
+  </div>
+  <div id="output">
+  </div>
+</div>
+  
     <script src="main.js"></script>
   </body>
 </html>
