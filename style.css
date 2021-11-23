@@ -8,11 +8,16 @@ h1 {
 #parent{
   display: inline-flex;
 }
+a{
+  position: absolute;
+  left: 50%;
+  top: 25%;
+}
 
 #output{
   position: absolute;
-  left: 50%;
-  top: 50%;
+  left: 52.5%;
+  top: 60%;
 }
 
 button {
