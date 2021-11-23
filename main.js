@@ -2,7 +2,7 @@
 // Sparar de sedan i passande variabler
 let header = document.querySelector("h1");
 let questions = document.querySelectorAll("h2");
-let modeButton = document.querySelector("#changeback");
+let modeButton = document.querySelector("#changemode");
 let resultButton = document.querySelector("#result");
 let label = document.querySelectorAll("#label");
 let inputs = document.querySelectorAll("#choice")
@@ -18,8 +18,9 @@ let check = [];
 
 document.body.style.background = "lightgrey";
 modeButton.style.color = "red";
+resultButton.style.color = "red";
 
-// Kopplar en listener till knappen med id="changeback". Använder en boolean för att kontrollera i vilket mode man 
+// Kopplar en listener till knappen med id="changemode". Använder en boolean för att kontrollera i vilket mode man 
 // befinner sig i. Loopar sen igenom alla element (input, label, h2) och sätter en lämplig färg på dem. 
 // Ändrar sedan variabeln darkmode
 modeButton.addEventListener("click", () => {
@@ -103,7 +104,7 @@ let createOutput = () => {
   }
   
   text.style.border = "brown solid 10px";
-  text.style.padding = "30px";
+  text.style.padding = "50px";
   output.appendChild(text);
 }
 
